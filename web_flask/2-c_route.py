@@ -18,10 +18,10 @@ def hbnb():
     return "HBNB"
 
 
-@app.route('/c/<text>')
+@app.route("/c/<text>")
 def c_text(text, strict_slashes=False):
     """Replace underscore _ symbols with a space."""
-    return 'C {}'.format(text.replace("_", " "))
+    return "C {}".format(text.replace("_", " "))
 
 
 if __name__ == "__main__":
